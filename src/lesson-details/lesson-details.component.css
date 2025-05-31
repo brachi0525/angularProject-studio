@@ -1,0 +1,86 @@
+.details-card {
+    margin: 20px auto;
+    max-width: 500px;
+    direction: rtl;
+    position: relative;
+    border: 1px solid #e3e3e3;
+    background-color: #ffffff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .details-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ff4081; /* צבע ורוד חזק */
+    color: white;
+    border-radius: 16px 16px 0 0;
+  }
+  
+  .card-header h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .card-header button {
+    background-color: #fff;
+    color: #ff4081;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card-header button:hover {
+    background-color: #ff79b0;
+    color: white;
+  }
+  
+  .card-body {
+    padding: 20px;
+    font-size: 16px;
+    color: #555;
+    background-color: #f9f9f9;
+    border-radius: 0 0 16px 16px;
+  }
+  
+  .card-body p {
+    margin-bottom: 16px;
+    line-height: 1.6;
+  }
+  
+  .card-footer {
+    background-color: #ff4081;
+    padding: 12px;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 0 0 16px 16px;
+  }
+  
+  .card-footer button {
+    background-color: #fff;
+    color: #ff4081;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card-footer button:hover {
+    background-color: #ff79b0;
+    color: white;
+  }
+  

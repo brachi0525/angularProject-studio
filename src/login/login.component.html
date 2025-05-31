@@ -1,0 +1,21 @@
+<!-- <div>
+    <input type="text" [(ngModel)]="userName" placeholder="שם משתמש"><br>
+    <input type="password" [(ngModel)]="password" placeholder="סיסמא"><br>
+    <button (click)="login()">כניסה</button>
+
+</div> -->
+
+<div class="login-form">
+    <h2>התחבר לחשבון שלך</h2>
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+      <input type="text" formControlName="userName" placeholder="שם משתמש" required>
+      <input type="password" formControlName="password" placeholder="סיסמה" required>
+      <br>
+      <button mat-raised-button color="accent" type="submit" [disabled]="loginForm.invalid"> כניסה</button>
+
+    </form>
+    <div class="forgot-password">
+    </div>
+  </div>
+  
+  

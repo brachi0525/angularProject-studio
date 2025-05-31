@@ -1,0 +1,79 @@
+/* עיצוב הלוגין */
+.login-form {
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.105);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* מרכז את התוכן אופקית */
+    justify-content: center; /* מרכז את התוכן אנכית */
+    gap: 20px;
+    transition: transform 0.3s ease;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.login-form:hover {
+    transform: translateY(-10px);
+}
+
+.login-form h2 {
+    font-size: 24px;
+    color: #ff4081;
+    margin-bottom: 20px;
+}
+
+.login-form input {
+    align-items: center;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    width: 70%; /* הגבלת רוחב של השדה */
+    max-width: 350px; /* הגבלת רוחב מקסימלי */
+    transition: border-color 0.3s ease;
+}
+
+.login-form input:focus {
+    outline: none;
+    border-color: #3f51b5;
+    box-shadow: 0 0 5px #3f51b5;
+}
+
+.login-form button {
+    background-color: #ff4081;
+    color: white;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 60%; /* הגבלת רוחב של הכפתור */
+    max-width: 350px; /* הגבלת רוחב מקסימלי */
+}
+
+.login-form button:hover {
+    background-color: #ff79b0;
+}
+
+.login-form .forgot-password {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+
+.login-form .forgot-password a {
+    color: #ff4081;
+    text-decoration: none;
+}
+
+.login-form .forgot-password a:hover {
+    text-decoration: underline;
+}

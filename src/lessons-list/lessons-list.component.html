@@ -1,0 +1,18 @@
+<div class="gallery">
+    <mat-card *ngFor="let lesson of lessons" class="lesson-card" 
+    (click)="selectLesson(lesson)" [ngClass]="{ 'past-lesson': isLessonInPast(lesson) }">
+      <mat-card-title>{{ lesson.name }}</mat-card-title>
+      <mat-card-subtitle>מורה: {{ lesson.teacher }}</mat-card-subtitle>
+      <mat-card-content>
+        <p><strong>תאריך:</strong> {{ lesson.date }}</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  
+  <!-- תצוגת קומפוננטת בן כאשר נבחר שיעור -->
+  <app-lesson-details
+  *ngIf="selectedLesson"
+  [lesson]="selectedLesson"
+  (close)="selectedLesson = undefined">
+</app-lesson-details>
+  

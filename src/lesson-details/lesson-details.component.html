@@ -1,0 +1,18 @@
+<mat-card class="details-card" *ngIf="lesson">
+    <div class="card-header">
+      <mat-card-title>פרטים על השיעור: {{ lesson.name }}</mat-card-title>
+      <button mat-icon-button (click)="close.emit()" aria-label="סגור">
+        ❌
+      </button>
+    </div>
+  
+    <mat-card-content>
+      <p><strong>מורה:</strong> {{ lesson.teacher }}</p>
+      <p><strong>תאריך:</strong> {{ lesson.date }}</p>
+      <p><strong>שעה:</strong> {{ lesson.time }}</p>
+      <p><strong>משך:</strong> {{ lesson.houer }}</p>
+      <p><strong>מחיר:</strong> {{ lesson.price }} ₪</p>
+      <p><strong>המלצות:</strong> תלמידים אהבו את השיעור הזה!</p>
+    </mat-card-content>
+  </mat-card>
+  
